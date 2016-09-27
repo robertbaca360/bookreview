@@ -1,0 +1,12 @@
+
+<h2 class="page-title">Search Results</h2>
+
+<ul class="search-result-list clearfix">
+  {{#each result}}
+    <li class="search-result-list-item">
+      <a href="/reviews/results/{{this.id}}"><img src="{{this.thumbnail}}"></a><br>
+      <a href="/reviews/results/{{this.id}}">{{this.title}}</a><br>
+      <p>{{this.authors}}</p>
+    </li>
+  {{/each}}
+</ul>
